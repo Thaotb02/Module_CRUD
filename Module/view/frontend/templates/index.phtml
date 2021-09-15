@@ -1,0 +1,401 @@
+<!-- <table class="table table-bordered table-striped table-hover table-reponsive scroll">
+	<thead>
+		<a href="<?php echo $block->getBaseUrl(); ?>post/index/create">Add Post</a>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Content</th>
+			<th>Status</th>
+			<th>Created At</th>
+			<th>Updated At</th>
+			<th>Action</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<?php
+	$posts = $block->getPosts();
+	foreach ($posts as $post) {
+		echo "<td>" . $post->getId() . "</td>";
+		echo "<td>" . $post->getName() . "</td>";
+		echo "<td>" . $post->getContent() . "</td>";
+		echo "<td>" . $post->getStatus() . "</td>";
+		echo "<td>" . $post->getCreatedAt() . "</td>";
+		echo "<td>" . $post->getUpdatedAt() . "</td>";
+		echo "<td><a href='" . $block->getBaseUrl() . "post/index/edit/post_id/" . $post->getId() . "'>Edit</a></td>";
+		echo "<td><a href='" . $block->getBaseUrl() . "post/index/delete/post_id/" . $post->getId() . "'>Delete</a></td>";
+		echo "</tr>";
+	}
+	?>
+</table>
+</br> -->
+
+
+<div class="row">
+	<div class="col col-6">
+		<h2 class="sg-title">Buttons</h2>
+		<div class="row">
+			<div class="col col-4"><button class="action primary" type="button">Add to cart </button></div>
+			<div class="col col-4"><button class="action secondary" type="button">Standard </button></div>
+			<div class="col col-4"><button id="minus" class="action button-quantity" type="button">-</button> <input id="input" class="input-adjust" type="number" value="1"> <button id="plus" class="action button-quantity" type="button">+</button></div>
+		</div>
+		<h2 class="sg-title">Checkboxes &amp; Radio Buttons</h2>
+		<div class="row">
+			<div class="col col-6">
+				<ul class="unstyled centered">
+					<li><input id="styled-checkbox-1" class="styled-checkbox" checked="checked" type="checkbox" value="value1"> <label for="styled-checkbox-1">Ticked</label></li>
+					<li><input id="styled-checkbox-2" class="styled-checkbox" type="checkbox" value="value2"> <label for="styled-checkbox-2">Not Ticked</label></li>
+					<li><input id="styled-checkbox-3" class="styled-checkbox ticked-disabled" checked="checked" disabled="disabled" type="checkbox" value="value3"> <label for="styled-checkbox-3">Ticked,Disabled</label></li>
+					<li><input id="styled-checkbox-4" class="styled-checkbox" disabled="disabled" type="checkbox" value="value4"> <label for="styled-checkbox-4">Disabled</label></li>
+				</ul>
+			</div>
+			<div class="col col-6">
+				<ul class="unstyled centered">
+					<li><input id="styled-radio-1" class="styled-radio" checked="checked" type="radio" value="value1"> <label for="styled-radio-1">Selected</label></li>
+					<li><input id="styled-radio-2" class="styled-radio" type="radio" value="value2"> <label for="styled-radio-2">Not Selected</label></li>
+					<li><input id="styled-radio-3" class="styled-radio ticked-disabled" checked="checked" disabled="disabled" type="radio" value="value3"> <label for="styled-radio-3">Selected, Disabled</label></li>
+					<li><input id="styled-radio-4" class="styled-radio" disabled="disabled" type="radio" value="value4"> <label for="styled-radio-4">Disabled</label></li>
+				</ul>
+			</div>
+		</div>
+		<h2 class="sg-title">Input Fields</h2>
+		<div class="row">
+			<div class="col col-6">
+				<div class="control"><select id="select" name="select">
+						<option value="">Dropdown field</option>
+						<option value="5">5</option>
+						<option value="10">10</option>
+						<option value="15">15</option>
+						<option value="20">20</option>
+					</select></div>
+				<p><label for="fname"></label> <input id="fname" name="fname" type="text" value="Text field"></p>
+				<p><label for="fname"></label> <input id="fname" name="fname" type="text" value="Text field select"></p>
+				<p><input class="mage-error" type="text" value="Email@liv,com"></p>
+				<div class="mage-error">Please enter a valid email address</div>
+			</div>
+		</div>
+		<h2 class="sg-title">Navigation</h2>
+		<div class="tabset">
+			<!-- Tab 1 --> <input id="tab1" checked="checked" name="tabset" type="radio" aria-controls="marzen"> <label for="tab1">Description</label> <!-- Tab 2 --> <input id="tab2" name="tabset" type="radio" aria-controls="rauchbier"> <label for="tab2">Specifications</label> <!-- Tab 3 --> <input id="tab3" name="tabset" type="radio" aria-controls="dunkles"> <label for="tab3">Faq</label>
+			<div class="tab-panels">
+				<section id="marzen" class="tab-panel">
+					<h2 class="title-nav-content">1.Amafli 5 Seater Aluminium Outdoor Modular Lounge Setting Featuring Sunbrella Fabric</h2>
+					<p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that encourages another drink. The overall malt impression is soft, elegant, and complex, with a rich aftertaste that is never cloying or heavy.</p>
+					<p><strong>History:</strong> As the name suggests, brewed as a stronger “March beer” in March and lagered in cold caves over the summer. Modern versions trace back to the lager developed by Spaten in 1841, contemporaneous to the development of Vienna lager. However, the Märzen name is much older than 1841; the early ones were dark brown, and in Austria the name implied a strength band (14 °P) rather than a style. The German amber lager version (in the Viennese style of the time) was first served at Oktoberfest in 1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the standard festival beer.</p>
+				</section>
+				<section id="rauchbier" class="tab-panel">
+					<h2 class="title-nav-content">2.Amafli 5 Seater Aluminium Outdoor Modular Lounge Setting Featuring Sunbrella Fabric</h2>
+					<p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that encourages another drink. The overall malt impression is soft, elegant, and complex, with a rich aftertaste that is never cloying or heavy.</p>
+					<p><strong>History:</strong> As the name suggests, brewed as a stronger “March beer” in March and lagered in cold caves over the summer. Modern versions trace back to the lager developed by Spaten in 1841, contemporaneous to the development of Vienna lager. However, the Märzen name is much older than 1841; the early ones were dark brown, and in Austria the name implied a strength band (14 °P) rather than a style. The German amber lager version (in the Viennese style of the time) was first served at Oktoberfest in 1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the standard festival beer.</p>
+				</section>
+				<section id="dunkles" class="tab-panel">
+					<h2 class="title-nav-content">3.Amafli 5 Seater Aluminium Outdoor Modular Lounge Setting Featuring Sunbrella Fabric</h2>
+					<p><strong>Overall Impression:</strong> An elegant, malty German amber lager with a clean, rich, toasty and bready malt flavor, restrained bitterness, and a dry finish that encourages another drink. The overall malt impression is soft, elegant, and complex, with a rich aftertaste that is never cloying or heavy.</p>
+					<p><strong>History:</strong> As the name suggests, brewed as a stronger “March beer” in March and lagered in cold caves over the summer. Modern versions trace back to the lager developed by Spaten in 1841, contemporaneous to the development of Vienna lager. However, the Märzen name is much older than 1841; the early ones were dark brown, and in Austria the name implied a strength band (14 °P) rather than a style. The German amber lager version (in the Viennese style of the time) was first served at Oktoberfest in 1872, a tradition that lasted until 1990 when the golden Festbier was adopted as the standard festival beer.</p>
+				</section>
+			</div>
+		</div>
+		<div class="actions dropdown example-dropdown-1">&nbsp;</div>
+	</div>
+	<div class="col col-6">
+		<h2 class="sg-title">Alerts</h2>
+		<div class="message success">
+			<div>Product has been added to your shopping bag</div>
+		</div>
+		<div class="message error">
+			<div>Invalid username or password</div>
+		</div>
+		<h2 class="sg-title">Typography</h2>
+		<p>Open Sans Regular - 13px / 20px</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+		<h2 class="sg-title">Text Link</h2>
+		<p><a class="text-link">Text Link</a></p>
+		<h1>h1 Lora Regular - 32px</h1>
+		<h2>h2 Lora Regular - 24px</h2>
+		<h3>h3 Lora Regular - 18px</h3>
+		<h4>h4 Roboto Bold - 15px</h4>
+		<h2 class="sg-title">Misc</h2>
+		<div class="list-icon">
+			<ul>
+				<li class="item-icon"><a href="#" class="link-icon"> <span><i class="fas fa-times"></i></span></a></li>
+				<li class="item-icon"><a href="#" class="link-icon"> <span><i class="fab fa-facebook-f"></i></span></a></li>
+				<li class="item-icon"><a href="#" class="link-icon"> <span><i class="fab fa-instagram"></i></span></a></li>
+				<li class="item-icon"><a href="#" class="link-icon"> <span><i class="fab fa-twitter"></i></span></a></li>
+			</ul>
+		</div>
+
+		<div class="block-promo-wrapper block-promo-2columns">
+			<a class="block-promo" href="#">
+				<div class="img-banner">
+					<div class="title-banner">
+						<button class="action button-banner">Shop Outdoor Lounges</button>
+					</div>
+					<img src="https://images.unsplash.com/photo-1549740425-5e9ed4d8cd34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwzOTU0NTB8fGVufDB8fHx8&w=1000&q=80" alt="">
+
+				</div>
+
+			</a>
+
+		</div>
+	</div>
+</div>
+
+<div class="main-banner">
+	<a href="">
+		<div class="img-banner">
+			<img src="https://c4.wallpaperflare.com/wallpaper/214/107/630/blue-mountain-lake-ultra-hd-8k-resolution-7680x4320-download-wallpaper-preview.jpg" alt="">
+			<div class="title-banner">
+				<p class="title-main-banner">
+					Outdoor Dining
+				</p>
+				<p class="text-main-banner">Get summer ready with our exclusive outdoor furniture</p>
+				<button class="action button-banner">Shop outdoor Daybeds <i class="fas fa-chevron-right"></i></button>
+			</div>
+		</div>
+	</a>
+</div>
+
+
+<div class="list-banner">
+	<div class="row">
+		<div class="col">
+			<a class="block-promo" href="#">
+				<div class="img-banner">
+
+					<img src="https://i.pinimg.com/originals/f7/4c/f6/f74cf67b65a6d2e898c71599727329f3.jpg" alt="">
+					<div class="title-banner">
+						<p>Outdoor Dining</p>
+						<button class="action button-banner">Shop now <i class="fas fa-chevron-right"></i></button>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="col">
+			<a class="block-promo" href="#">
+				<div class="img-banner">
+					<img src="https://i.pinimg.com/originals/f7/4c/f6/f74cf67b65a6d2e898c71599727329f3.jpg" alt="">
+					<div class="title-banner">
+						<p>Outdoor Dining</p>
+						<button class="action button-banner">Shop now <i class="fas fa-chevron-right"></i></button>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="sevice">
+	<div class="row row-sevice">
+		<div class="col">
+			<a href="">OUTDOOR FURNITURE CLEARANCE STORE <i class="fas fa-chevron-right"></i></a>
+		</div>
+		<div class="col">
+			<a href="">OUTDOOR FURNITURE CLEARANCE STORE <i class="fas fa-chevron-right"></i></a>
+		</div>
+		<div class="col">
+			<a href="">OUTDOOR FURNITURE CLEARANCE STORE <i class="fas fa-chevron-right"></i></a>
+		</div>
+	</div>
+</div>
+
+<div class="collection">
+	<div class="row">
+		<div class="col col-collection">
+			<a href="" class="link-collection">
+				<img src="https://www.viewsonic.com/skin/frontend/smartwave/viewsonic/images/category-pages/projector-home/4k_projectors/Ultra_HD.jpg" alt="">
+				<div class="text-collection">
+					<h2>Vogue Collection</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+					<button class="action button-collection">Shop now <i class="fas fa-chevron-right"></i></button>
+				</div>
+			</a>
+		</div>
+		<div class="col col-collection">
+			<a href="" class="link-collection">
+				<img src="https://www.viewsonic.com/skin/frontend/smartwave/viewsonic/images/category-pages/projector-home/4k_projectors/Ultra_HD.jpg" alt="">
+				<div class="text-collection">
+					<h2>Vogue Collection</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+					<button class="action button-collection">Shop now <i class="fas fa-chevron-right"></i></button>
+				</div>
+			</a>
+		</div>
+		<div class="col col-collection">
+			<a href="" class="link-collection">
+				<img src="https://www.viewsonic.com/skin/frontend/smartwave/viewsonic/images/category-pages/projector-home/4k_projectors/Ultra_HD.jpg" alt="">
+				<div class="text-collection">
+					<h2>Vogue Collection</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+					<button class="action button-collection">Shop now <i class="fas fa-chevron-right"></i></button>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+<a href=""></a>
+<div class="list-banner">
+	<div class="row">
+		<div class="col">
+			<a class="block-promo" href="#">
+				<div class="img-banner">
+
+					<img src="https://i.pinimg.com/originals/f7/4c/f6/f74cf67b65a6d2e898c71599727329f3.jpg" alt="">
+					<div class="title-banner">
+						<p>Catalogues</p>
+						<button class="action button-banner">Explore now</button>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<div class="col">
+			<a class="block-promo" href="#">
+				<div class="img-banner">
+					<iframe width="610" height="438" src="https://www.youtube.com/embed/Zzn9-ATB9aU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
+
+
+<div class="footer-brand">
+	<div class="row">
+		<div class="col">
+			<a href="#" class="link-footer-brand">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBb_ujY1CqPorCASYhtybCQxVOfeOTho7rAzcWV4mimZG1njN8NwdSih4gTdsL0Kp0bM&usqp=CAU" alt="">
+			</a>
+		</div>
+		<div class="col">
+			<div class="content-brand">
+				<button class="action secondary">Canberra Showroom</button>
+				<div class="content-brand-text">
+					<p>Maryborough St & Wollongong Street, Fyshwick ACT 2609</p>
+					<p>T: 1300 644 596 </p>
+					<a href="#">View more info</a>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<a href="#" class="link-footer-brand">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBb_ujY1CqPorCASYhtybCQxVOfeOTho7rAzcWV4mimZG1njN8NwdSih4gTdsL0Kp0bM&usqp=CAU" alt="">
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="footer-banner">
+	<div class="img-banner">
+		<img src="{{media url="Rectangle_15.png"}}" alt="" class="img-desktop">
+		<img src="{{media url="Rectangle_15.png"}}" alt="" class="img">
+		<div class="footer-banner-content">
+			<p class="footer-banner-title">
+				Exclusive outdoor furniture, online prices
+			</p>
+			<div class="footer-banner-text">
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span>
+				<a href="#" class="learn-more">Learn more</a>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer-sevice">
+
+	<div class="row-footer-service">
+		<div class="col">
+			<a href="#">
+				<i class="fas fa-truck"></i> We ship australia wide!
+			</a>
+		</div>
+
+		<div class="col">
+			<a href="#">
+				<i class="fas fa-map-marker-alt"></i> Find a store
+			</a>
+		</div>
+
+		<div class="col">
+			<a href="#">
+				<i class="fas fa-dollar-sign"></i> Money back guarantee
+			</a>
+		</div>
+
+		<div class="col">
+			<a href="#">
+				<i class="fas fa-envelope"></i> Contact us
+			</a>
+		</div>
+	</div>
+</div>
+
+
+	<div class="row-footer-service">
+		<div class="col-service">
+		<i class="fas fa-truck"></i>
+			<div class="link-service service-left"> <a href="#">We ship australia wide!</a> </div>
+		</div>
+		<div class="col-service">
+		<i class="fas fa-map-marker-alt"></i>
+			<div class="link-service service-right"> <a href="#">Find a store</a> </div>
+		</div>
+		<div class="col-service">
+		<i class="fas fa-dollar-sign"></i>
+			<div class="link-service service-left"><a href="#">Money back guarantee</a> </div>
+		</div>
+		<div class="col-service">
+		<i class="fas fa-envelope"></i>
+			<div class="link-service service-right"><a href="#">Contact us</a> </div>
+		</div>
+	</div>
+
+	<p><input id="input-footer-mobile-about" class="footer-mobile-about" type="checkbox"></p>
+<div class="footer-title"><label for="input-footer-mobile-about">Why Burning Log?</label></div>
+<ul class="content-footer-about">
+<li><a href="http://">About us</a></li>
+<li><a href="http://">All products</a></li>
+<li><a href="http://">Catalogues</a></li>
+<li><a href="http://">Contact us</a></li>
+</ul>
+
+
+/* Make Rows */
+.row {
+display: flex;
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px;
+}
+
+
+@media (min-width: 576px) {
+.col-sm-6 {
+flex: 0 0 50%;
+max-width: 50%;
+}
+}
+
+@media (min-width: 768px) {
+
+.col-md-6 {
+flex: 0 0 50%;
+max-width: 50%;
+}
+}
+@media (min-width: 992px) {
+
+.col-lg-3 {
+flex: 0 0 25%;
+max-width: 25%;
+}
+}
+
+
+.abc{
+width:100%;
+height:50px;
+background-color: red ;
+text-align:center;
+}
